@@ -1,0 +1,43 @@
+{
+  "name": "fastify-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "swc src -d dist",
+    "build-dev": "npm run build && NODE_ENV=development node --inspect dist/server.js",
+    "dev": "nodemon --ext ts --exec \"npm run build-dev\"",
+    "start": "npm run build && NODE_ENV=production node dist/server.js",
+    "eslint:check": "eslint src/**/*.ts",
+    "eslint:fix": "eslint src/**/*.ts --fix",
+    "prettier:check": "prettier --check 'src/**/*.ts'",
+    "prettier:fix": "prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "fastify": "^4.3.0",
+    "fastify-cors": "^6.1.0",
+    "fastify-plugin": "^4.0.0",
+    "joi": "^17.6.0",
+    "pino-pretty": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.222",
+    "@types/node": "^18.6.3",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.21.0",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-functional": "^4.0.2",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}

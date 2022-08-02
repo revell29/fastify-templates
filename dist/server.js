@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"app",{enumerable:!0,get:()=>d});const a=c(require("./app")),b=c(require("./routes/news.routes"));function c(a){return a&&a.__esModule?a:{default:a}}const d=new a.default({plugins:[],routes:[b.default]});d.listen()
+//# sourceMappingURL=server.js.map

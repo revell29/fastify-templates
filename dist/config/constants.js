@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"default",{enumerable:!0,get:()=>a});const a={app:{domain:"localhost",port:8e3,kind:"developement"},jwt:{secret:"1q@w3e4r5t6y",expires:"24h"},db_system:{host:"localhost",port:6432,user:"user_system",password:"1234",database:"db_system"}}
+//# sourceMappingURL=constants.js.map

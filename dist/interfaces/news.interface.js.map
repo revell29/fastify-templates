@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/interfaces/news.interface.ts"],"sourcesContent":["export interface ResponseNews<T = void> {\n  status: number;\n  message: string;\n  data?: T[] | T;\n}\n"],"names":[],"mappings":"AAAA,mEAIC"}

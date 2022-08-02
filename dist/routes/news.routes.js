@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"default",{enumerable:!0,get:()=>b});const a=function(a){return a&&a.__esModule?a:{default:a}}(require("../controllers/news.controller")),b=class{async routes(b,c,d){b.get("/",a.default.create)}constructor(){this.prefix_route="/news"}}
+//# sourceMappingURL=news.routes.js.map
